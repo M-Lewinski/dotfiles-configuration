@@ -1,0 +1,12 @@
+*light_blue:	#0060fc
+*.light_blue:	#0060fc
+*dark_blue_bg:	#141e53
+*.dark_blue_bg:	#141e53
+*important:	#ff360e
+*.important:	#ff360e
+*dark_black_bg:	#06090F
+*.dark_black_bg:	#06090F
+*warning:	#db9d00
+*.warning:	#db9d00
+
+
