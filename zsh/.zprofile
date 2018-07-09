@@ -1,5 +1,5 @@
 setxkbmap pl
 
 if [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
-	exec startx
+	exec startx > $HOME/log/startx.log 2>&1
 fi

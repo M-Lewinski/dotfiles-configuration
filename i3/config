@@ -164,7 +164,17 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 
-### i3-gaps stuff ###
+##############################################################################
+# QUALITY OF LIFE - enable usefull options or disable annoying stuff
+
+# No focus on mouse enter
+focus_follows_mouse no
+
+# Go back and forth between workspaces when you select again the same workspace
+workspace_auto_back_and_forth yes
+
+##############################################################################
+# i3-gaps stuff 
 # Necessary for i3-gaps to work properly (pixel can be any value)
 for_window [class="^.*"] border pixel 5 
 # Smart Gaps
@@ -210,8 +220,43 @@ mode "$mode_gaps_outer" {
         bindsym Escape mode "default"
 }
 
-# No focus on mouse enter
-focus_follows_mouse no
+
+
+##############################################################################
+# Assign classes and instances to specific workspaces
+
+assign [class="discord"] $ws10
+assign [class="slack"] $ws10
+assign [class="Slack"] $ws10
+
+
+##############################################################################
+# Multimedia keys and other key bindings
+
+# Using pulseaudio as daemon for audio firmware
+# Pulse Audio controls
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
+bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute 0 toggle # mute microphone
+
+# Sreen brightness controls
+bindsym XF86MonBrightnessUp exec xbacklight -inc 5 # increase screen brightness
+bindsym XF86MonBrightnessDown exec xbacklight -dec 5 # decrease screen brightness
+
+
+# Media player controls
+bindsym XF86AudioPlay exec playerctl play
+bindsym XF86AudioPause exec playerctl pause
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
+
+# Calculator sends to workspace with chats app
+bindsym XF86Calculator workspace $ws10
+
+# Reset polybar
+
+bindsym $mod+p exec --no-startup-id $HOME/.config/polybar/launch.sh
 
 ##############################################################################
 # COLORS FOR i3 WINDOWS
@@ -245,13 +290,22 @@ client.background       $dark_black_bg
 
 
 # Start Compton - X11 compositor
+#exec --no-startup-id compton --config ~/.config/compton.conf -b
 exec --no-startup-id compton --backend xrender --config ~/.config/compton.conf -b
 #exec --no-startup-id allow_rgb10_configs=false compton --backend xrender --config ~/.config/compton.conf -b
 
 # Set wallpaper
-exec --no-startup-id feh --bg-fill ~/dotfiles/airplanes2.png 
+exec --no-startup-id feh --bg-fill ~/.wallpapers/airplanes2.png 
 
+# Start discord
+exec --no-startup-id discord
+# Start slack
+exec --no-startup-id slack
+# Start polybar
+exec --no-startup-id $HOME/.config/polybar/launch.sh
 
+###############################################################################
+# ENDING STUFF
 # Execute i3lock after i3 session started
 # Should be last line in this config
 #exec --no-startup-id i3lock -c 000000

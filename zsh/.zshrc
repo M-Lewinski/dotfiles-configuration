@@ -10,7 +10,7 @@
 #ZSH_THEME="robbyrussell"
 export TERM="xterm-256color"
 
-ZSH_THEME="powerlevel9k-master/powerlevel9k"
+ZSH_THEME="powerlevel9k/powerlevel9k"
 
 #export PROMPT='%n '
 export DEFAULT_USER="lewin-user"

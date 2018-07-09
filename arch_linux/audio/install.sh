@@ -1,0 +1,4 @@
+pulseaudio
+alsa-utils
+pavcontrol
+
