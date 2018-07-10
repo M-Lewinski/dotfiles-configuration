@@ -163,6 +163,14 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+# move to previous and next workspace
+bindsym $mod+Control+Left workspace prev
+bindsym $mod+Control+Right workspace next
+
+# move window to previous and next workspace
+bindsym $mod+Control+Shift+Left move container to workspace prev
+bindsym $mod+Control+Shift+Right move container to workspace next
+
 
 ##############################################################################
 # QUALITY OF LIFE - enable usefull options or disable annoying stuff
@@ -304,6 +312,8 @@ exec --no-startup-id slack
 # Start polybar
 exec --no-startup-id $HOME/.config/polybar/launch.sh
 
+# Move to workspace with chat apps
+exec --no-startup-id i3-msg 'workspace $ws10'
 ###############################################################################
 # ENDING STUFF
 # Execute i3lock after i3 session started

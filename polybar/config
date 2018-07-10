@@ -176,6 +176,7 @@ type = internal/backlight
 format = <label>
 label = light %percentage%%
 format-prefix = " "
+format-underline = #dfdfdf
 bar-width = 10
 bar-indicator = |
 bar-indicator-foreground = #ff
@@ -196,7 +197,7 @@ card = intel_backlight
 [module/cpu]
 type = internal/cpu
 interval = 2
-format-prefix = "CPU"
+format-prefix = "cpu "
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #f90000
 label = %percentage:2%%
@@ -204,9 +205,9 @@ label = %percentage:2%%
 [module/memory]
 type = internal/memory
 interval = 2
-format-prefix = "RAM " 
+format-prefix = "ram " 
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #4bffdc
+format-underline = #df5500
 label = %percentage_used%%
 
 [module/wlan]
@@ -271,6 +272,7 @@ format-volume = <label-volume>
 label-volume = vol %percentage%%
 label-volume-foreground = ${root.foreground}
 format-volume-prefix = " "
+format-volume-underline = #5fd400
 
 format-muted-prefix = " " 
 format-muted-foreground = ${colors.foreground-alt}
