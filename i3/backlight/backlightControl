@@ -1,0 +1,43 @@
+#!/bin/bash
+MAX=100.0
+MIN=5.0
+BRIGHTNESS=$( cat /sys/class/backlight/intel_backlight/actual_brightness )
+BEFORE=$BRIGHTNESS
+SKALA=$( cat /sys/class/backlight/intel_backlight/max_brightness )
+SKALA=$( echo "scale=2; $SKALA/100" | bc )
+BRIGHTNESS=$( echo "scale=2; $BRIGHTNESS/$SKALA" | bc )
+while test $1
+do
+    case $1 in
+    '-h' | '--help') echo -e "\n\tProgram adjusting backlight volume by modyfing values in specific files."
+    echo -e "\n\tIn order to decrease exectuion time, all values are stored as constant values rather than config file."
+    echo -e "\n\tAvailable parameters:"
+    echo -e "\n\t\t-h\t--help\t show help information\n"
+    echo -e "\n\t\t-i\t--increase=VALUE\t increase backlight volume by value provided\n"
+    echo -e "\n\t\t-d\t--decrease=VALUE\t decrease backlight volume by value provided\n"
+    echo -e "\n\t\t-s\t--set=VALUE\t set backlight volume with value provided\n"
+    echo -e "\n\n\tWritten by Michał Lewinski - 2018\n\n"
+    exit;;
+    '-i' | '--increase') shift 1
+    BRIGHTNESS=$( echo "scale=2; $BRIGHTNESS+$1" | bc );;
+    '-s' | '--set') shift 1
+    BRIGHTNESS=$1;;
+    '-d' | '--decrease') shift 1
+    BRIGHTNESS=$( echo "scale=2; $BRIGHTNESS-$1" | bc );;
+    *) echo -e "Wrong parameter $1"
+    exit 1;;
+    esac
+    shift 1
+done
+
+if [ "$( echo "${BRIGHTNESS} > ${MAX}" | bc )" == 1 ] ; then
+    BRIGHTNESS=$MAX
+elif [ "$( echo "${BRIGHTNESS} < ${MIN}" | bc )" == 1 ] ; then
+    BRIGHTNESS=$MIN
+fi
+BRIGHTNESS=$( echo "scale=0; $BRIGHTNESS*$SKALA" | bc )
+BRIGHTNESS=$( echo $BRIGHTNESS | awk '{printf("%d\n",$0+=$0<0?0:0.999)}' ) # Ceil of float
+BRIGHTNESS=$( echo $BRIGHTNESS | cut -d "." -f 1 ) # Remove float part (just for safety reasones)
+if [ $BEFORE != $BRIGHTNESS ] ; then
+    echo $BRIGHTNESS > /sys/class/backlight/intel_backlight/brightness
+fi

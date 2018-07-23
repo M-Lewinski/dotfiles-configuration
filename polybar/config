@@ -54,6 +54,7 @@ font-4 = "SourceCodePro+Powerline+Awesome Regular:pixelsize=10;0"
 
 modules-left = i3
 modules-center = 
+;modules-right = xkeyboard volume backlight memory cpu temperature wlan eth batteryInternal batteryExternal date powermenu
 modules-right = volume backlight memory cpu temperature wlan eth batteryInternal batteryExternal date powermenu
 
 tray-position = right
@@ -137,25 +138,37 @@ label-mode-foreground = #000
 label-mode-background = ${colors.primary}
 
 ; focused = Active workspace on focused monitor
-label-focused = %index%
+label-focused = %index% %icon%
 label-focused-background = ${colors.background-alt}
 label-focused-underline = ${colors.primary}
 label-focused-padding = 2
 
 ; unfocused = Inactive workspace on any monitor
-label-unfocused = %index%
+label-unfocused = %index% %icon%
 label-unfocused-padding = 2
 
 ; visible = Active workspace on unfocused monitor
-label-visible = %index%
+label-visible = %index% %icon%
 label-visible-background = ${self.label-focused-background}
 label-visible-underline = ${self.label-focused-underline}
 label-visible-padding = ${self.label-focused-padding}
 
 ; urgent = Workspace with urgency hint set
-label-urgent = %index%
+label-urgent = %index% %icon%
 label-urgent-background = ${colors.alert}
 label-urgent-padding = 2
+
+; Icons for workspaces
+ws-icon-0 = 1;
+ws-icon-1 = 2;
+ws-icon-2 = 3;
+ws-icon-3 = 4;
+ws-icon-4 = 5;
+ws-icon-5 = 6;
+ws-icon-6 = 7;
+ws-icon-7 = 8;
+ws-icon-8 = 9;
+ws-icon-9 = 10;
 
 [module/mpd]
 type = internal/mpd
