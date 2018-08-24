@@ -150,10 +150,20 @@ mode "resize" {
         bindsym semicolon resize grow width 10 px or 10 ppt
 
         # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
+       bindsym Left resize shrink width 10 px or 10 ppt
+       bindsym Down resize grow height 10 px or 10 ppt
+       bindsym Up resize shrink height 10 px or 10 ppt
+       bindsym Right resize grow width 10 px or 10 ppt
+        
+        #bindings to shrink and resize windows
+        # bindsym Left        resize grow left 10 px or 10 ppt
+        # bindsym Shift+Left  resize shrink left 10 px or 10 ppt
+        # bindsym Down        resize grow down 10 px or 10 ppt
+        # bindsym Shift+Down  resize shrink down 10 px or 10 ppt
+        # bindsym Up          resize grow up 10 px or 10 ppt
+        # bindsym Shift+Up    resize shrink up 10 px or 10 ppt
+        # bindsym Right       resize grow right 10 px or 10 ppt
+        # bindsym Shift+Right resize shrink rigth 10 px or 10 ppt
 
         # back to normal: Enter or Escape or $mod+r
         bindsym Return mode "default"
@@ -171,6 +181,9 @@ bindsym $mod+Control+Right workspace next
 bindsym $mod+Control+Shift+Left move container to workspace prev
 bindsym $mod+Control+Shift+Right move container to workspace next
 
+# move workspace to left and right monitor/output
+bindsym $mod+brackeleft move workspace to output left
+bindsym $mod+bracketright move workspace to output right
 
 ##############################################################################
 # QUALITY OF LIFE - enable usefull options or disable annoying stuff
@@ -265,8 +278,10 @@ bindsym XF86AudioPrev exec playerctl previous
 # Calculator sends to workspace with chats app
 bindsym XF86Calculator workspace $ws10
 
-# Reset polybar
+# Screen lock
+#bindsym Super_L exec lock
 
+# Reset polybar
 bindsym $mod+p exec --no-startup-id $HOME/.config/polybar/launch.sh
 
 ##############################################################################
@@ -303,6 +318,7 @@ client.background       $dark_black_bg
 # Start Compton - X11 compositor
 #exec --no-startup-id compton --config ~/.config/compton.conf -b
 exec --no-startup-id compton --backend xrender --config ~/.config/compton.conf -b
+#exec --no-startup-id compton --backend glx --vsync opengl-swc --config ~/.config/compton.conf -b
 #exec --no-startup-id allow_rgb10_configs=false compton --backend xrender --config ~/.config/compton.conf -b
 
 # Set wallpaper
@@ -317,6 +333,10 @@ exec --no-startup-id $HOME/.config/polybar/launch.sh
 
 # Move to workspace with chat apps
 exec --no-startup-id i3-msg 'workspace $ws10'
+
+# Use external locker as X screen saver
+#exec --no-startup-id xss-lock -- lock
+
 ###############################################################################
 # ENDING STUFF
 # Execute i3lock after i3 session started
@@ -324,5 +344,5 @@ exec --no-startup-id i3-msg 'workspace $ws10'
 #exec --no-startup-id i3lock -c 000000
 
 # Betterlockscreen using wallpaper as soruce
-exec --no-startup-id betterlockscreen -w	# Use wallpaper as lock screen image
-exec --no-startup-id betterlockscreen -l dim	# Lock screen (for real)
+#exec --no-startup-id betterlockscreen -w	# Use wallpaper as lock screen image
+exec --no-startup-id lock

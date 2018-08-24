@@ -36,7 +36,7 @@
     close = ctrl+space
     close_all = ctrl+shift+space
     context = ctrl+shift+period
-    history = ctrl+shift 
+    history = ctrl+shift+h 
 
 [urgency_low]
     #background = "#333333"
@@ -57,9 +57,9 @@
     timeout = 15
 
 [Discord]
-    appname = Discord Canary
-    format = "<u><b>%s</b></u>\n%b"
-    new_icon = Discord
+    appname = Discord
+    format = "<b>%s</b>\n%b"
+    script = ~/.config/dunst/setUrgent.sh
 
 [WMail]
     appname = Electron
@@ -88,4 +88,4 @@
 [Slack]
     appname = Slack
     format = "<b>%s</b>\n%b"
-    new_icon = Slack
+    script = ~/.config/dunst/setUrgent.sh
