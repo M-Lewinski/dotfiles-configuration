@@ -182,7 +182,7 @@ bindsym $mod+Control+Shift+Left move container to workspace prev
 bindsym $mod+Control+Shift+Right move container to workspace next
 
 # move workspace to left and right monitor/output
-bindsym $mod+brackeleft move workspace to output left
+bindsym $mod+bracketleft move workspace to output left
 bindsym $mod+bracketright move workspace to output right
 
 ##############################################################################
