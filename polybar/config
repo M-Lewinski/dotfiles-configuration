@@ -55,7 +55,7 @@ font-4 = "SourceCodePro+Powerline+Awesome Regular:pixelsize=10;0"
 modules-left = i3
 modules-center = 
 ;modules-right = xkeyboard volume backlight memory cpu temperature wlan eth batteryInternal batteryExternal date powermenu
-modules-right = volume backlight memory cpu temperature wlan eth batteryInternal batteryExternal date powermenu
+modules-right = xkeyboard volume backlight memory cpu temperature wlan eth batteryInternal batteryExternal date powermenu
 
 tray-position = right
 tray-padding = 2
