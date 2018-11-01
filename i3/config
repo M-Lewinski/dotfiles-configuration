@@ -284,6 +284,12 @@ bindsym XF86Calculator workspace $ws10
 # Reset polybar
 bindsym $mod+p exec --no-startup-id $HOME/.config/polybar/launch.sh
 
+# Print whole screen
+bindsym Print exec printscreen -t 1
+
+# Choose window or area to print
+bindsym $mod+Print exec printscreen -t 2
+
 ##############################################################################
 # COLORS FOR i3 WINDOWS
 

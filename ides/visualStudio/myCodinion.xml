@@ -1,0 +1,658 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Theme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ThemeColorType>Dark</ThemeColorType>
+  <Formats>
+    <Entry Key="CodinionCSharpNamespaceClassifier">
+      <Format IsEnabled="true">
+        <ClassifierName>CodinionCSharpNamespaceClassifier</ClassifierName>
+        <Color>#FFFFE84F</Color>
+        <Decorations />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionCSharpConstructorClassifier">
+      <Format IsEnabled="true">
+        <ClassifierName>CodinionCSharpConstructorClassifier</ClassifierName>
+        <Color>#FFA7E22E</Color>
+        <Decorations IsBold="true" />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionCSharpDestructorClassifier">
+      <Format IsEnabled="true">
+        <ClassifierName>CodinionCSharpDestructorClassifier</ClassifierName>
+        <Color>#FFA7E22E</Color>
+        <Decorations IsBold="true" />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionCSharpStructConstructorClassifier">
+      <Format IsEnabled="true">
+        <ClassifierName>CodinionCSharpStructConstructorClassifier</ClassifierName>
+        <Color>#FFFFD700</Color>
+        <Decorations />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionCSharpEventClassifier">
+      <Format IsEnabled="true">
+        <ClassifierName>CodinionCSharpEventClassifier</ClassifierName>
+        <Color>#FFFFD700</Color>
+        <Decorations />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionCSharpMethodClassifier">
+      <Format IsEnabled="true">
+        <ClassifierName>CodinionCSharpMethodClassifier</ClassifierName>
+        <Color>#FFAAE936</Color>
+        <Decorations />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionCSharpMethodParameterClassifier">
+      <Format IsEnabled="true">
+        <ClassifierName>CodinionCSharpMethodParameterClassifier</ClassifierName>
+        <Color>#FFFE9720</Color>
+        <Decorations />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionCSharpNamedParameterClassifier">
+      <Format IsEnabled="true">
+        <ClassifierName>CodinionCSharpNamedParameterClassifier</ClassifierName>
+        <Color>#FFFE9720</Color>
+        <Decorations />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionCSharpPropertyClassifier">
+      <Format IsEnabled="true">
+        <ClassifierName>CodinionCSharpPropertyClassifier</ClassifierName>
+        <Color>#FF66D9EE</Color>
+        <Decorations />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionCSharpFieldClassifier">
+      <Format IsEnabled="true">
+        <ClassifierName>CodinionCSharpFieldClassifier</ClassifierName>
+        <Color>#FF66D9EE</Color>
+        <Decorations />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionCSharpVariableClassifier">
+      <Format IsEnabled="true">
+        <ClassifierName>CodinionCSharpVariableClassifier</ClassifierName>
+        <Color>#FFF6F6F6</Color>
+        <Decorations />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionCSharpEnumMemberClassifier">
+      <Format IsEnabled="true">
+        <ClassifierName>CodinionCSharpEnumMemberClassifier</ClassifierName>
+        <Color>#FFBACCF5</Color>
+        <Decorations />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionCSharpTypeParameterClassifier">
+      <Format IsEnabled="true">
+        <ClassifierName>CodinionCSharpTypeParameterClassifier</ClassifierName>
+        <Color>#FFD9E577</Color>
+        <Decorations />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionCSharpPreprocessorClassifier">
+      <Format>
+        <ClassifierName>CodinionCSharpPreprocessorClassifier</ClassifierName>
+        <Color>#FF808080</Color>
+        <Decorations />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionCSharpClassClassifier">
+      <Format IsEnabled="true">
+        <ClassifierName>CodinionCSharpClassClassifier</ClassifierName>
+        <Color>#FF6899FF</Color>
+        <Decorations />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionCSharpStructClassifier">
+      <Format>
+        <ClassifierName>CodinionCSharpStructClassifier</ClassifierName>
+        <Color>#FF4EC9B0</Color>
+        <Decorations />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionCSharpInterfaceClassifier">
+      <Format IsEnabled="true">
+        <ClassifierName>CodinionCSharpInterfaceClassifier</ClassifierName>
+        <Color>#FF2BBF3E</Color>
+        <Decorations />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionCSharpEnumClassifier">
+      <Format IsEnabled="true">
+        <ClassifierName>CodinionCSharpEnumClassifier</ClassifierName>
+        <Color>#FF9BAFE2</Color>
+        <Decorations />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionCSharpDelegateClassifier">
+      <Format IsEnabled="true">
+        <ClassifierName>CodinionCSharpDelegateClassifier</ClassifierName>
+        <Color>#FF53AFD9</Color>
+        <Decorations />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionCSharpPrimitiveTypeClassifier">
+      <Format>
+        <ClassifierName>CodinionCSharpPrimitiveTypeClassifier</ClassifierName>
+        <Color>#FF569CD6</Color>
+        <Decorations />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionCSharpStringClassifier">
+      <Format IsEnabled="true">
+        <ClassifierName>CodinionCSharpStringClassifier</ClassifierName>
+        <Color>#FFE6DA74</Color>
+        <Decorations />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionCSharpNumberClassifier">
+      <Format IsEnabled="true">
+        <ClassifierName>CodinionCSharpNumberClassifier</ClassifierName>
+        <Color>#FFAE81FF</Color>
+        <Decorations />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionCSharpCommentClassifier">
+      <Format IsEnabled="true">
+        <ClassifierName>CodinionCSharpCommentClassifier</ClassifierName>
+        <Color>#FF808080</Color>
+        <Decorations />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionCSharpOperatorClassifier">
+      <Format IsEnabled="true">
+        <ClassifierName>CodinionCSharpOperatorClassifier</ClassifierName>
+        <Color>#FFB4B4B4</Color>
+        <Decorations />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionCSharpKeywordClassifier">
+      <Format IsEnabled="true">
+        <ClassifierName>CodinionCSharpKeywordClassifier</ClassifierName>
+        <Color>#FFF92772</Color>
+        <Decorations />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionCSharpLabelClassifier">
+      <Format IsEnabled="true">
+        <ClassifierName>CodinionCSharpLabelClassifier</ClassifierName>
+        <Color>#FFD69D85</Color>
+        <Decorations />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionCSharpAssenmblyInternalClassifier">
+      <Format>
+        <ClassifierName>CodinionCSharpAssenmblyInternalClassifier</ClassifierName>
+        <Decorations IsItalic="true" />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionCSharpAssemblyExternalClassifier">
+      <Format>
+        <ClassifierName>CodinionCSharpAssemblyExternalClassifier</ClassifierName>
+        <Decorations IsItalic="true" />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionCSharpOverrideClassifier">
+      <Format IsEnabled="true">
+        <ClassifierName>CodinionCSharpOverrideClassifier</ClassifierName>
+        <Color>#FFAAE936</Color>
+        <Decorations IsBold="true" IsUnderlined="true" />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionCSharpStaticClassifier">
+      <Format>
+        <ClassifierName>CodinionCSharpStaticClassifier</ClassifierName>
+        <Decorations IsBold="true" />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionCSharpConstClassifier">
+      <Format IsEnabled="true">
+        <ClassifierName>CodinionCSharpConstClassifier</ClassifierName>
+        <Color>#FF652DC0</Color>
+        <Decorations IsBold="true" />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionCSharpVirtualClassifier">
+      <Format>
+        <ClassifierName>CodinionCSharpVirtualClassifier</ClassifierName>
+        <Decorations IsBold="true" />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionCSharpPrivateClassifier">
+      <Format>
+        <ClassifierName>CodinionCSharpPrivateClassifier</ClassifierName>
+        <Decorations IsBold="true" />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionCSharpInternalClassifier">
+      <Format>
+        <ClassifierName>CodinionCSharpInternalClassifier</ClassifierName>
+        <Decorations IsBold="true" />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionCSharpProtectedClassifier">
+      <Format>
+        <ClassifierName>CodinionCSharpProtectedClassifier</ClassifierName>
+        <Decorations IsBold="true" />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionCSharpPublicClassifier">
+      <Format>
+        <ClassifierName>CodinionCSharpPublicClassifier</ClassifierName>
+        <Decorations IsBold="true" />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionCSharpParentIsStructClassifier">
+      <Format>
+        <ClassifierName>CodinionCSharpParentIsStructClassifier</ClassifierName>
+        <Decorations IsBold="true" />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionCSharpDeclarationClassifier">
+      <Format>
+        <ClassifierName>CodinionCSharpDeclarationClassifier</ClassifierName>
+        <Decorations IsBold="true" />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionCSharpExtensionMethodClassifier">
+      <Format>
+        <ClassifierName>CodinionCSharpExtensionMethodClassifier</ClassifierName>
+        <Decorations IsBold="true" />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionBasicNamespaceClassifier">
+      <Format IsEnabled="true">
+        <ClassifierName>CodinionBasicNamespaceClassifier</ClassifierName>
+        <Color>#FFFFD700</Color>
+        <Decorations />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionBasicEventClassifier">
+      <Format IsEnabled="true">
+        <ClassifierName>CodinionBasicEventClassifier</ClassifierName>
+        <Color>#FFFFD700</Color>
+        <Decorations />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionBasicMethodClassifier">
+      <Format IsEnabled="true">
+        <ClassifierName>CodinionBasicMethodClassifier</ClassifierName>
+        <Color>#FFFF8000</Color>
+        <Decorations />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionBasicMethodParameterClassifier">
+      <Format IsEnabled="true">
+        <ClassifierName>CodinionBasicMethodParameterClassifier</ClassifierName>
+        <Color>#FFBDB76B</Color>
+        <Decorations />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionBasicNamedParameterClassifier">
+      <Format IsEnabled="true">
+        <ClassifierName>CodinionBasicNamedParameterClassifier</ClassifierName>
+        <Color>#FFBDB76B</Color>
+        <Decorations />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionBasicPropertyClassifier">
+      <Format IsEnabled="true">
+        <ClassifierName>CodinionBasicPropertyClassifier</ClassifierName>
+        <Color>#FFBDB76B</Color>
+        <Decorations />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionBasicFieldClassifier">
+      <Format IsEnabled="true">
+        <ClassifierName>CodinionBasicFieldClassifier</ClassifierName>
+        <Color>#FFBDB76B</Color>
+        <Decorations />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionBasicVariableClassifier">
+      <Format IsEnabled="true">
+        <ClassifierName>CodinionBasicVariableClassifier</ClassifierName>
+        <Color>#FFBDB76B</Color>
+        <Decorations />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionBasicEnumMemberClassifier">
+      <Format IsEnabled="true">
+        <ClassifierName>CodinionBasicEnumMemberClassifier</ClassifierName>
+        <Color>#FFBD63C5</Color>
+        <Decorations />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionBasicTypeParameterClassifier">
+      <Format IsEnabled="true">
+        <ClassifierName>CodinionBasicTypeParameterClassifier</ClassifierName>
+        <Color>#FFBDB76B</Color>
+        <Decorations />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionBasicPreprocessorClassifier">
+      <Format>
+        <ClassifierName>CodinionBasicPreprocessorClassifier</ClassifierName>
+        <Color>#FF808080</Color>
+        <Decorations />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionBasicModuleClassifier">
+      <Format>
+        <ClassifierName>CodinionBasicModuleClassifier</ClassifierName>
+        <Color>#FF4EC9B0</Color>
+        <Decorations />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionBasicClassClassifier">
+      <Format>
+        <ClassifierName>CodinionBasicClassClassifier</ClassifierName>
+        <Color>#FF4EC9B0</Color>
+        <Decorations />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionBasicStructClassifier">
+      <Format>
+        <ClassifierName>CodinionBasicStructClassifier</ClassifierName>
+        <Color>#FF4EC9B0</Color>
+        <Decorations />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionBasicInterfaceClassifier">
+      <Format>
+        <ClassifierName>CodinionBasicInterfaceClassifier</ClassifierName>
+        <Color>#FFB8D7A3</Color>
+        <Decorations />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionBasicEnumClassifier">
+      <Format>
+        <ClassifierName>CodinionBasicEnumClassifier</ClassifierName>
+        <Color>#FFB8D7A3</Color>
+        <Decorations />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionBasicDelegateClassifier">
+      <Format>
+        <ClassifierName>CodinionBasicDelegateClassifier</ClassifierName>
+        <Color>#FF4EC9B0</Color>
+        <Decorations />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionBasicPrimitiveTypeClassifier">
+      <Format>
+        <ClassifierName>CodinionBasicPrimitiveTypeClassifier</ClassifierName>
+        <Color>#FF569CD6</Color>
+        <Decorations />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionBasicStringClassifier">
+      <Format>
+        <ClassifierName>CodinionBasicStringClassifier</ClassifierName>
+        <Color>#FFD69D85</Color>
+        <Decorations />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionBasicNumberClassifier">
+      <Format>
+        <ClassifierName>CodinionBasicNumberClassifier</ClassifierName>
+        <Color>#FFB5CEA8</Color>
+        <Decorations />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionBasicCommentClassifier">
+      <Format>
+        <ClassifierName>CodinionBasicCommentClassifier</ClassifierName>
+        <Color>#FF57A64A</Color>
+        <Decorations />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionBasicOperatorClassifier">
+      <Format>
+        <ClassifierName>CodinionBasicOperatorClassifier</ClassifierName>
+        <Color>#FFB4B4B4</Color>
+        <Decorations />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionBasicKeywordClassifier">
+      <Format>
+        <ClassifierName>CodinionBasicKeywordClassifier</ClassifierName>
+        <Color>#FF569CD6</Color>
+        <Decorations />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionBasicLabelClassifier">
+      <Format>
+        <ClassifierName>CodinionBasicLabelClassifier</ClassifierName>
+        <Color>#FFD69D85</Color>
+        <Decorations />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionBasicAssenmblyInternalClassifier">
+      <Format>
+        <ClassifierName>CodinionBasicAssenmblyInternalClassifier</ClassifierName>
+        <Decorations IsItalic="true" />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionBasicAssemblyExternalClassifier">
+      <Format>
+        <ClassifierName>CodinionBasicAssemblyExternalClassifier</ClassifierName>
+        <Decorations IsItalic="true" />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionBasicOverrideClassifier">
+      <Format>
+        <ClassifierName>CodinionBasicOverrideClassifier</ClassifierName>
+        <Decorations IsUnderlined="true" />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionBasicStaticClassifier">
+      <Format>
+        <ClassifierName>CodinionBasicStaticClassifier</ClassifierName>
+        <Decorations IsBold="true" />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionBasicConstClassifier">
+      <Format>
+        <ClassifierName>CodinionBasicConstClassifier</ClassifierName>
+        <Decorations IsBold="true" />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionBasicVirtualClassifier">
+      <Format>
+        <ClassifierName>CodinionBasicVirtualClassifier</ClassifierName>
+        <Decorations IsBold="true" />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionBasicPrivateClassifier">
+      <Format>
+        <ClassifierName>CodinionBasicPrivateClassifier</ClassifierName>
+        <Decorations IsBold="true" />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionBasicInternalClassifier">
+      <Format>
+        <ClassifierName>CodinionBasicInternalClassifier</ClassifierName>
+        <Decorations IsBold="true" />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionBasicProtectedClassifier">
+      <Format>
+        <ClassifierName>CodinionBasicProtectedClassifier</ClassifierName>
+        <Decorations IsBold="true" />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionBasicPublicClassifier">
+      <Format>
+        <ClassifierName>CodinionBasicPublicClassifier</ClassifierName>
+        <Decorations IsBold="true" />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionBasicParentIsStructClassifier">
+      <Format>
+        <ClassifierName>CodinionBasicParentIsStructClassifier</ClassifierName>
+        <Decorations IsBold="true" />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionBasicDeclarationClassifier">
+      <Format>
+        <ClassifierName>CodinionBasicDeclarationClassifier</ClassifierName>
+        <Decorations IsBold="true" />
+      </Format>
+    </Entry>
+    <Entry Key="CodinionFindResultsHighlightClassifier">
+      <Format IsEnabled="true">
+        <ClassifierName>CodinionFindResultsHighlightClassifier</ClassifierName>
+        <Color>#FFFFFFFF</Color>
+        <BackgroundColor>#FFA9A9A9</BackgroundColor>
+        <Decorations />
+      </Format>
+    </Entry>
+  </Formats>
+  <Areas>
+    <Entry Key="CodinionCSharpConstructorArea">
+      <AreaFormat>
+        <Name>CodinionCSharpConstructorArea</Name>
+        <BackgroundColor>#0F8F8F8F</BackgroundColor>
+        <BorderColor>#64A9A9A9</BorderColor>
+      </AreaFormat>
+    </Entry>
+    <Entry Key="CodinionCSharpDestructorArea">
+      <AreaFormat>
+        <Name>CodinionCSharpDestructorArea</Name>
+        <BackgroundColor>#0F8F8F8F</BackgroundColor>
+        <BorderColor>#64A9A9A9</BorderColor>
+      </AreaFormat>
+    </Entry>
+    <Entry Key="CodinionCSharpMethodArea">
+      <AreaFormat>
+        <Name>CodinionCSharpMethodArea</Name>
+        <BackgroundColor>#0F8F8F8F</BackgroundColor>
+        <BorderColor>#64A9A9A9</BorderColor>
+      </AreaFormat>
+    </Entry>
+    <Entry Key="CodinionCSharpRegionArea">
+      <AreaFormat>
+        <Name>CodinionCSharpRegionArea</Name>
+        <BackgroundColor>#0F8F8F8F</BackgroundColor>
+        <BorderColor>#64A9A9A9</BorderColor>
+      </AreaFormat>
+    </Entry>
+    <Entry Key="CodinionCSharpPreprocessorDefineArea">
+      <AreaFormat>
+        <Name>CodinionCSharpPreprocessorDefineArea</Name>
+        <BackgroundColor>#0F8F8F8F</BackgroundColor>
+        <BorderColor>#64A9A9A9</BorderColor>
+      </AreaFormat>
+    </Entry>
+    <Entry Key="CodinionCSharpPreprocessorUndefineArea">
+      <AreaFormat>
+        <Name>CodinionCSharpPreprocessorUndefineArea</Name>
+        <BackgroundColor>#0F8F8F8F</BackgroundColor>
+        <BorderColor>#64A9A9A9</BorderColor>
+      </AreaFormat>
+    </Entry>
+    <Entry Key="CodinionCSharpPreprocessorIfArea">
+      <AreaFormat>
+        <Name>CodinionCSharpPreprocessorIfArea</Name>
+        <BackgroundColor>#0F8F8F8F</BackgroundColor>
+        <BorderColor>#64A9A9A9</BorderColor>
+      </AreaFormat>
+    </Entry>
+    <Entry Key="CodinionCSharpPreprocessorLineArea">
+      <AreaFormat>
+        <Name>CodinionCSharpPreprocessorLineArea</Name>
+        <BackgroundColor>#0F8F8F8F</BackgroundColor>
+        <BorderColor>#64A9A9A9</BorderColor>
+      </AreaFormat>
+    </Entry>
+    <Entry Key="CodinionCSharpPreprocessorWarningArea">
+      <AreaFormat>
+        <Name>CodinionCSharpPreprocessorWarningArea</Name>
+        <BackgroundColor>#0F8F8F8F</BackgroundColor>
+        <BorderColor>#64A9A9A9</BorderColor>
+      </AreaFormat>
+    </Entry>
+    <Entry Key="CodinionCSharpPreprocessorErrorArea">
+      <AreaFormat>
+        <Name>CodinionCSharpPreprocessorErrorArea</Name>
+        <BackgroundColor>#0F8F8F8F</BackgroundColor>
+        <BorderColor>#64A9A9A9</BorderColor>
+      </AreaFormat>
+    </Entry>
+    <Entry Key="CodinionCSharpPreprocessorPragmaWarningArea">
+      <AreaFormat>
+        <Name>CodinionCSharpPreprocessorPragmaWarningArea</Name>
+        <BackgroundColor>#0F8F8F8F</BackgroundColor>
+        <BorderColor>#64A9A9A9</BorderColor>
+      </AreaFormat>
+    </Entry>
+    <Entry Key="CodinionCSharpPreprocessorPragmaChecksumArea">
+      <AreaFormat>
+        <Name>CodinionCSharpPreprocessorPragmaChecksumArea</Name>
+        <BackgroundColor>#0F8F8F8F</BackgroundColor>
+        <BorderColor>#64A9A9A9</BorderColor>
+      </AreaFormat>
+    </Entry>
+    <Entry Key="CodinionBasicConstructorArea">
+      <AreaFormat>
+        <Name>CodinionBasicConstructorArea</Name>
+        <BackgroundColor>#0F8F8F8F</BackgroundColor>
+        <BorderColor>#64A9A9A9</BorderColor>
+      </AreaFormat>
+    </Entry>
+    <Entry Key="CodinionBasicMethodArea">
+      <AreaFormat>
+        <Name>CodinionBasicMethodArea</Name>
+        <BackgroundColor>#0F8F8F8F</BackgroundColor>
+        <BorderColor>#64A9A9A9</BorderColor>
+      </AreaFormat>
+    </Entry>
+    <Entry Key="CodinionBasicRegionArea">
+      <AreaFormat>
+        <Name>CodinionBasicRegionArea</Name>
+        <BackgroundColor>#0F8F8F8F</BackgroundColor>
+        <BorderColor>#64A9A9A9</BorderColor>
+      </AreaFormat>
+    </Entry>
+    <Entry Key="CodinionBasicPreprocessorIfArea">
+      <AreaFormat>
+        <Name>CodinionBasicPreprocessorIfArea</Name>
+        <BackgroundColor>#FFD3D3D3</BackgroundColor>
+        <BorderColor>#FFA9A9A9</BorderColor>
+      </AreaFormat>
+    </Entry>
+    <Entry Key="CodinionBasicPreprocessorConstArea">
+      <AreaFormat>
+        <Name>CodinionBasicPreprocessorConstArea</Name>
+        <BackgroundColor>#FFD3D3D3</BackgroundColor>
+        <BorderColor>#FFA9A9A9</BorderColor>
+      </AreaFormat>
+    </Entry>
+    <Entry Key="CodinionBasicPreprocessorExternalSourceArea">
+      <AreaFormat>
+        <Name>CodinionBasicPreprocessorExternalSourceArea</Name>
+        <BackgroundColor>#FFD3D3D3</BackgroundColor>
+        <BorderColor>#FFA9A9A9</BorderColor>
+      </AreaFormat>
+    </Entry>
+    <Entry Key="CodinionBasicPreprocessorEnableWarningArea">
+      <AreaFormat>
+        <Name>CodinionBasicPreprocessorEnableWarningArea</Name>
+        <BackgroundColor>#FFD3D3D3</BackgroundColor>
+        <BorderColor>#FFA9A9A9</BorderColor>
+      </AreaFormat>
+    </Entry>
+    <Entry Key="CodinionBasicPreprocessorDisableWarningArea">
+      <AreaFormat>
+        <Name>CodinionBasicPreprocessorDisableWarningArea</Name>
+        <BackgroundColor>#FFD3D3D3</BackgroundColor>
+        <BorderColor>#FFA9A9A9</BorderColor>
+      </AreaFormat>
+    </Entry>
+  </Areas>
+</Theme>

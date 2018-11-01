@@ -85,7 +85,12 @@
     format = "<b>%s</b>\n%b"
     new_icon = Transmission
     timeout = 2000
+
 [Slack]
     appname = Slack
     format = "<b>%s</b>\n%b"
     script = ~/.config/dunst/setUrgent.sh
+
+[Screenshot]
+    appname = Screenshot
+    format = "<b>%s</b>\n%b"
