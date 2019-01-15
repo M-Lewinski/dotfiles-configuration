@@ -328,7 +328,8 @@ exec --no-startup-id compton --backend xrender --config ~/.config/compton.conf -
 #exec --no-startup-id allow_rgb10_configs=false compton --backend xrender --config ~/.config/compton.conf -b
 
 # Set wallpaper
-exec --no-startup-id feh --bg-fill ~/.wallpapers/airplanes2.png 
+#exec --no-startup-id feh --bg-fill ~/.wallpapers/airplanes2.png 
+exec --no-startup-id feh --bg-scale ~/.wallpapers/airplanes2.png 
 
 # Start discord
 exec --no-startup-id discord
@@ -361,3 +362,4 @@ exec --no-startup-id redshift-gtk
 # Betterlockscreen using wallpaper as soruce
 #exec --no-startup-id betterlockscreen -w	# Use wallpaper as lock screen image
 exec --no-startup-id lock
+exec --no-startup-id $HOME/.dotfiles/healthcheck/healthcheck.sh

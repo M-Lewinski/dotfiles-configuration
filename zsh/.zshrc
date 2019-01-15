@@ -15,9 +15,10 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 #export PROMPT='%n '
 export DEFAULT_USER="lewin-user"
 #CUSTOMIZE POWERLEVEL9k !!!USE ONLY WITH POWERLEVEL9 THEME!!!
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir rbenv vcs)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir rbenv vcs status)
 #POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=( dir rbenv vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status time)
+#POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status time)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
 
 
 POWERLEVEL9K_SHORTEN_DIR_LENGTH=3
@@ -119,6 +120,12 @@ source $ZSH/oh-my-zsh.sh
 # Allow Tilix (terminal) to work correctly with vte.sh config files
 if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
 	        source /etc/profile.d/vte.sh
+fi
+
+# Allow fzf reverse search
+if hash fzf &>/dev/null; then
+	source $HOME/.dotfiles/fzf/fzf.zsh
+	source $HOME/.dotfiles/fzf/key-bindings.zsh
 fi
 
 # Golang export

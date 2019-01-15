@@ -52,9 +52,9 @@
 
 [urgency_critical]
     #background = "#333333"
-    background = "#222222"
+    background = "#d12a14"
     foreground = "#dfdfdf"
-    timeout = 15
+    timeout = 0
 
 [Discord]
     appname = Discord
