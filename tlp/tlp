@@ -277,7 +277,7 @@ START_CHARGE_THRESH_BAT1=40
 STOP_CHARGE_THRESH_BAT1=90
 
 # Restore charge thresholds when AC is unplugged: 0=disable, 1=enable.
-#RESTORE_THRESHOLDS_ON_BAT=1
+RESTORE_THRESHOLDS_ON_BAT=1
 
 # ------------------------------------------------------------------------------
 # tlp-rdw - Parameters for the radio device wizard
