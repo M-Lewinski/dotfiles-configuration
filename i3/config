@@ -246,9 +246,15 @@ mode "$mode_gaps_outer" {
 ##############################################################################
 # Assign classes and instances to specific workspaces
 
+# Communicators
 assign [class="discord"] $ws10
 assign [class="slack"] $ws10
 assign [class="Slack"] $ws10
+
+# IDEs
+assign [class="jetbrains-rider"] $ws3
+assign [class="jetbrains-idea"] $ws3
+assign [class="code-oss"] $ws3
 
 
 ##############################################################################
