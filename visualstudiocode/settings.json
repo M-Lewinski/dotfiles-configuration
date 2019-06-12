@@ -1,0 +1,25 @@
+{
+    "workbench.activityBar.visible": true,
+    "window.menuBarVisibility": "toggle",
+    "workbench.statusBar.visible": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "[csharp]": {
+        
+    },
+    "files.autoSave": "onWindowChange",
+    "editor.fontFamily": "SourceCodePro+Powerline+Awesome+Regular",
+    "editor.renderWhitespace": "all",
+    "files.exclude": {
+        "**/.idea": true
+    },
+    "editor.wordWrapColumn": 120,
+    "editor.quickSuggestionsDelay": 5,
+    "window.openFilesInNewWindow": "default",
+    "workbench.editor.enablePreview": false,
+    "editor.rulers": [80,120],
+    "workbench.colorCustomizations": {
+        "editorRuler.foreground": "#381526"
+    },
+    "cSpell.language": "en,pl",
+    "editor.fontSize": 15
+}

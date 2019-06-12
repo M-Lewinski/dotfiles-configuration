@@ -1,0 +1,16 @@
+##################################################################
+# Extensions that are usefull to have
+
+# General
+Code Spell Checker
+ToDo highlights
+pathIntellisense
+material icon theme
+Bracket pair Colorizer
+
+
+# C#
+C#
+C# extensions
+vs code .csproj
+

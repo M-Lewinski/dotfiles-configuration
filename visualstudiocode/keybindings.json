@@ -1,0 +1,11 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "shift+alt+enter",
+        "command": "workbench.action.files.showOpenedFileInNewWindow"
+    },
+    {
+        "key": "ctrl+k o",
+        "command": "-workbench.action.files.showOpenedFileInNewWindow"
+    }
+]

@@ -33,7 +33,13 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
 fi
 
 # make fast keyboard input
-xset r rate 200 60
+#xset r rate 200 60
+
+# Set trackpoint accel speed
+#xinput --set-prop "TPPS/2 IBM TrackPoint" "libinput Accel Speed" 1.0
+#xinput --set-prop "TPPS/2 IBM TrackPoint" "libinput Accel Profile Enabled" 0 1
+
+/home/$USER/.dotfiles/keyboard/keyboard_setup.sh
 
 # Launch startx
 exec i3

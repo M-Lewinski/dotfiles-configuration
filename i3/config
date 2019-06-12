@@ -43,10 +43,17 @@ bindsym $mod+d exec dmenu_run
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 # change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
+#bindsym $mod+j focus left
+#bindsym $mod+k focus down
+#bindsym $mod+l focus up
+#bindsym $mod+semicolon focus right
+
+# Change focus based on vim bindings
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -55,10 +62,10 @@ bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
 # move focused window
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindsym $mod+Shift+semicolon move right
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
@@ -67,7 +74,7 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+h split h
+bindsym $mod+backslash split h
 
 # split in vertical orientation
 bindsym $mod+v split v
@@ -144,10 +151,17 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 10 px or 10 ppt
-        bindsym k resize grow height 10 px or 10 ppt
-        bindsym l resize shrink height 10 px or 10 ppt
-        bindsym semicolon resize grow width 10 px or 10 ppt
+        #bindsym j resize shrink width 10 px or 10 ppt
+        #bindsym k resize grow height 10 px or 10 ppt
+        #bindsym l resize shrink height 10 px or 10 ppt
+        #bindsym semicolon resize grow width 10 px or 10 ppt
+	
+	# keep vim bindings
+	
+        bindsym h resize shrink width 10 px or 10 ppt
+        bindsym j resize grow height 10 px or 10 ppt
+        bindsym k resize shrink height 10 px or 10 ppt
+        bindsym l resize grow width 10 px or 10 ppt
 
         # same bindings, but for the arrow keys
        bindsym Left resize shrink width 10 px or 10 ppt
@@ -177,9 +191,15 @@ bindsym $mod+r mode "resize"
 bindsym $mod+Control+Left workspace prev
 bindsym $mod+Control+Right workspace next
 
+bindsym $mod+Control+h workspace prev
+bindsym $mod+Control+l workspace next
+
 # move window to previous and next workspace
 bindsym $mod+Control+Shift+Left move container to workspace prev
 bindsym $mod+Control+Shift+Right move container to workspace next
+
+bindsym $mod+Control+Shift+h move container to workspace prev
+bindsym $mod+Control+Shift+l move container to workspace next
 
 # move workspace to left and right monitor/output
 bindsym $mod+bracketleft move workspace to output left
@@ -288,13 +308,43 @@ bindsym XF86Calculator workspace $ws10
 #bindsym Super_L exec lock
 
 # Reset polybar
-bindsym $mod+p exec --no-startup-id $HOME/.config/polybar/launch.sh
+bindsym $mod+Control+b exec --no-startup-id $HOME/.config/polybar/launch.sh
+bindsym $mod+Shift+b exec --no-startup-id killall polybar
 
 # Print whole screen
-bindsym Print exec printscreen -t 1
+bindsym $mod+Print exec printscreen -t 1
 
 # Choose window or area to print
-bindsym $mod+Print exec printscreen -t 2
+bindsym $mod+Control+Print exec printscreen -t 2
+
+# Move to specific worskapces
+
+# switch to workspace
+bindsym $mod+n workspace $ws1
+bindsym $mod+m workspace $ws2
+bindsym $mod+comma workspace $ws3
+bindsym $mod+period workspace $ws4
+bindsym $mod+slash workspace $ws5
+bindsym $mod+y workspace $ws6
+bindsym $mod+u workspace $ws7
+bindsym $mod+i workspace $ws8
+bindsym $mod+o workspace $ws9
+bindsym $mod+p workspace $ws10
+
+# move focused container to workspace
+bindsym $mod+Shift+n move container to workspace $ws1
+bindsym $mod+Shift+m move container to workspace $ws2
+bindsym $mod+Shift+comma move container to workspace $ws3
+bindsym $mod+Shift+period move container to workspace $ws4
+bindsym $mod+Shift+slash move container to workspace $ws5
+bindsym $mod+Shift+y move container to workspace $ws6
+bindsym $mod+Shift+u move container to workspace $ws7
+bindsym $mod+Shift+i move container to workspace $ws8
+bindsym $mod+Shift+o move container to workspace $ws9
+bindsym $mod+Shift+p move container to workspace $ws10
+
+# focus the parent container
+bindsym $mod+g focus parent
 
 ##############################################################################
 # COLORS FOR i3 WINDOWS
