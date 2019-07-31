@@ -148,3 +148,7 @@ set-default-sink analog-output-headphones
 # Enable sound in vitualbox (DOES NOT WORK!!!)
 #load-module module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1
 
+# Enable noice cancellation (software)
+load-module module-echo-cancel aec_method=webrtc aec_args="analog_gain_control=0 digital_gain_control=1" source_name=noecho source_properties=device.description=Noecho
+
+set-default-source noecho
