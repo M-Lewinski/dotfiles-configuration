@@ -21,5 +21,6 @@
         "editorRuler.foreground": "#381526"
     },
     "cSpell.language": "en,pl",
-    "editor.fontSize": 15
+    "window.zoomLevel": 1,
+    "editor.lineHeight": 16
 }

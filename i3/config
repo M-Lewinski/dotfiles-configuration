@@ -36,6 +36,7 @@ bindsym $mod+Return exec i3-sensible-terminal
 # kill focused window
 bindsym $mod+Shift+q kill
 bindsym $mod+$alt+Control+space kill
+bindsym $mod+Delete kill
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec dmenu_run
@@ -106,7 +107,9 @@ bindsym $mod+$alt+space floating toggle
 bindsym $mod+space focus mode_toggle
 
 # focus the parent container
-bindsym $mod+a focus parent
+#bindsym $mod+a focus parent
+bindsym $mod+a focus child
+bindsym $mod+Shift+a focus child
 
 # focus the child container
 #bindsym $mod+d focus child
@@ -384,7 +387,6 @@ bindsym $mod+$alt+o move container to workspace $ws9
 bindsym $mod+$alt+p move container to workspace $ws10
 # focus the parent container
 bindsym $mod+g focus parent
-
 ##############################################################################
 # COLORS FOR i3 WINDOWS
 
@@ -447,6 +449,9 @@ exec --no-startup-id redshift-gtk
 
 # Use dockd for lenovo dock station
 #exec --no-startup-id sudo dockd --daemon
+
+# Use xbindkeys to remove middle mouse paste
+exec --no-startup-id xbindkeys
 
 ###############################################################################
 # ENDING STUFF
