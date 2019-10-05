@@ -48,6 +48,7 @@ else
     xrandr  -d :0.0  --output $MONITOR --off
 fi
 
-$HOME/.dotfiles/polybar/launch.sh
 $HOME/.dotfiles/keyboard/keyboard_setup.sh
 feh --bg-scale $HOME/.wallpapers/airplanes2.png
+sleep 4
+$HOME/.dotfiles/polybar/launch.sh
