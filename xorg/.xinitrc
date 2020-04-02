@@ -44,6 +44,7 @@ fi
 
 /home/$USER/.dotfiles/keyboard/keyboard_setup.sh
 
+
 # disable dpms
 xset -dpms
 

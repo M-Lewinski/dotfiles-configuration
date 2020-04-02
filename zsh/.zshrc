@@ -135,7 +135,7 @@ export NVM_DIR="$HOME/.nvm"
 
 
 # Golang export
-export GO=~/go
+export GOPATH=$HOME/go
 
 # tabtab source for serverless package
 # uninstall by removing these lines or running `tabtab uninstall serverless`

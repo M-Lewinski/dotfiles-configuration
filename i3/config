@@ -456,6 +456,9 @@ exec --no-startup-id xbindkeys
 # Should be last line in this config
 #exec --no-startup-id i3lock -c 000000
 
+# Check external monitors
+exec --no-startup-id hotplug_dock
+
 # Betterlockscreen using wallpaper as soruce
 #exec --no-startup-id betterlockscreen -w	# Use wallpaper as lock screen image
 exec --no-startup-id lock

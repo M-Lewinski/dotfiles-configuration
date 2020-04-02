@@ -1,6 +1,5 @@
 #!/usr/bin/bash
-logger "ACPI event: $*"
-
+logger "Dock: Launching dock script"
 export DISPLAY=:0
 export XAUTHORITY=/home/$USER/.Xauthority
 
@@ -10,8 +9,10 @@ TRIES=0
 SIDE="--left-of"
 #Laptop monitor
 LAPTOP="eDP-1"
-#Defualt external monitor
-MONITOR="DP-2-2"
+
+#Sleep just to make sure that handshake between monitor and main system was succesfull
+sleep 1
+
 #Check if external monitor is connected. Sometimes xrandr doesn't see external monitor immediately after connecting
 EXTERNAL_MONITOR_STATUS=`find -L /sys/class/drm/ -maxdepth 2 -name 'status'  2>/dev/null -printf "%p " -exec cat {} \;  | grep -v $LAPTOP | grep " connected"`
 
@@ -28,27 +29,37 @@ do
     shift 1
 done
 
+
 function wait_for_monitor {
-    xrandr  -d :0.0  | grep -v $LAPTOP | grep '\bconnected'
+    xrandr   | grep -v $LAPTOP | grep '\bconnected'
     while [ $? -ne 0 ]; do
            TRIES=$((TRIES+1))
             sleep $SLEEPTIME
-            xrandr  -d :0.0  | grep -v $LAPTOP | grep '\bconnected'
+            xrandr  | grep -v $LAPTOP | grep '\bconnected'
             if [ "$TRIES" -eq "$MAXTRIES"  ]; then
+		logger "Dock: waiting for monitor was unsuccesfull"
                 exit 1;
             fi
     done
-    MONITOR=`xrandr  -d :0.0  | grep -v $LAPTOP | grep '\bconnected'| cut -f 1 -d " "`      
+    MONITOR=`xrandr  | grep -v $LAPTOP | grep '\bconnected'| cut -f 1 -d " "`      
+    export EXTERNAL_MONITOR=$MONITOR
+    echo $EXTERNAL_MONITOR | tee /tmp/.ext_monitor
 }
 
 if [ "$EXTERNAL_MONITOR_STATUS" != "" ]; then
+    logger "Dock: found external monitor. Attempting to set external display."
     wait_for_monitor
-    xrandr  -d :0.0  --output $MONITOR --auto --primary $SIDE $LAPTOP
+    xrandr -d :0.0 --output $MONITOR --auto --primary $SIDE $LAPTOP
 else
-    xrandr  -d :0.0  --output $MONITOR --off
+    logger "Dock: removing previous external displays"
+    if [ -f /tmp/.ext_monitor ]; then
+	EXTERNAL_MONITOR=`cat /tmp/.ext_monitor`
+    fi
+    xrandr -d :0.0 --output $EXTERNAL_MONITOR --off
 fi
 
 $HOME/.dotfiles/keyboard/keyboard_setup.sh
 feh --bg-scale $HOME/.wallpapers/airplanes2.png
-sleep 4
 $HOME/.dotfiles/polybar/launch.sh
+
+logger "Dock: dock script finished"
