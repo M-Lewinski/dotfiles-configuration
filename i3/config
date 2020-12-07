@@ -420,9 +420,10 @@ client.background       $dark_black_bg
 
 # Start Compton - X11 compositor
 #exec --no-startup-id compton --config ~/.config/compton.conf -b
-exec --no-startup-id compton --backend xrender --config ~/.config/compton.conf -b
+#exec --no-startup-id compton --backend xrender --config ~/.config/compton.conf -b
 #exec --no-startup-id compton --backend glx --vsync opengl-swc --config ~/.config/compton.conf -b
 #exec --no-startup-id allow_rgb10_configs=false compton --backend xrender --config ~/.config/compton.conf -b
+exec --no-startup-id picom --backend xrender --config ~/.config/compton.conf -b
 
 # Set wallpaper
 #exec --no-startup-id feh --bg-fill ~/.wallpapers/airplanes2.png 
